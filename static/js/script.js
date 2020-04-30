@@ -1,3 +1,16 @@
+// fazendo fucionar o relogio
+var r = document.getElementById('relogio');
+function atualizaHora(){
+    var hoje = new Date();
+    var h = hoje.getHours();
+    var m = hoje.getMinutes();
+    var s = hoje.setSeconds();
+    r.textContent = h + ":" + m + ":" s;
+}
+
+setInterval(atualizaHora, 1000); //tempo em milisegundos
+///////////////////////////////
+
 const raiz = document.getElementById('lista');
 
 // var xhr = new XMLHttpRequest();
